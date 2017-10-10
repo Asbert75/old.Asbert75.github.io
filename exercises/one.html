@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uppgift 7.1</title>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/exercises/one.css">
+</head>
+<body>
+    <style>
+        h2:after {
+            content: " =>"
+        }
+    </style>
+
+    <div class="content">
+        <div class="lecture">
+            <h1>Lektion 1 - HTML & HTML 5</h1>
+            <h2>Första lektionen</h2>
+            <p>Jag var inte med på föreläsningen idag och har därför inte mycket att säga om innehållet ni gick igenom mer än att det i slidesen står om t.ex. 
+                hur man bygger upp ett html-dokument, den går också igenom några viktiga/vanliga taggar/element.
+            </p>
+        </div>
+
+        <div class="taggar">
+            <div class="row">
+                <p>Det finns en hel del olika taggar i html, t.ex. kan man använda sig av "strong" för att göra text <strong>tjock.</strong> 
+                Man kan också använda sig av <b>"b"</b> för samma effekt. Utöver dessa två finns också "em" och "i" för att göra text <em>italic</em> 
+                samt "u" för att <u>understryka</u> ett ord.
+                </p>
+            </div>
+
+            <div class="row">
+                <p>Vill man skriva text utan att webbläsaren formaterar om den eller om man vill skriva ett stycke kod i webbläsaren och
+                    behålla sin indentering kan man använda sig av <em>pre</em>-taggen. Vill man skriva ett stycke kod kan man istället använda
+                    sig av <em>code</em>-taggen.
+                </p>
+
+                <pre>Detta är text som använder sig utav pre-taggen, då kan man t.ex lägga in            såhär många 
+                    mellanslag utan att webbläsaren gör om det till ett enda. Nedan är ett stycke kod i en code-tag.
+                </pre>
+                <code>
+                    function countToThree() {
+                        for(var i = 0; i < 3; i++) {
+                            console.log(i);
+                        }
+                    }
+                </code>
+            </div>
+
+            <div class="row">
+                <p>Ett anchor är en tag som kan redirecta användaren till en länk, t.ex. kan du klicka <a href="https://www.google.com" target="_blank">HÄR</a> för att komma till google i en ny tab 
+                    eller <a href="https://www.google.com">HÄR</a> för att ladda google i denna tab.</p>
+            </div>
+
+            <div class="row">
+                <p>En ul eller unordered list är en lista där varje li (list item) är oordnat, alltså att den inte har en nummerordning. Te.x kan 
+                    det vara en inköpslista.
+                </p>
+                <ul>
+                    <li>Ägg</li>
+                    <li>Mjölk</li>
+                    <li>Bröd</li>
+                    <li>Gurka</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <p>En ol eller ordered list är en lista där varje li (list item) har en ordning, alltså att varje item har har ett nummer (1, 2, 3 etc).</p>
+                <ol>
+                    <li>Objekt</li>
+                    <li>Objekt</li>
+                    <li>Objekt</li>
+                    <li>Objekt</li>
+                </ol>
+            </div>
+
+            <div class="row">
+                <p>Simulering av ett SQL table genom table-taggen.</p>     
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>encryption</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Erik Olsson</td>
+                        <td>erik@mail.com</td>
+                        <td>SHA-256</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Annabelle Larsson</td>
+                        <td>anna@belle.se</td>
+                        <td>SHA-256</td>   
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Christoffer Persson</td>
+                        <td>christ@off.er</td>
+                        <td>SHA-512</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row">
+                <form>
+                    Create Account<br>
+                    <input type="text" placeholder="John">
+                    <input type="text" placeholder="Doe">
+                    <br><br>
+                    <input type="email" placeholder="example@email.com">
+                    <input type="password" placeholder="******">
+                    <br>
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+
+            <div class="row">
+                <img class="imagePreview" src="../images/memories.jpg" alt="test image"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

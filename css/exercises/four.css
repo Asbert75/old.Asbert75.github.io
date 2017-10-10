@@ -1,0 +1,30 @@
+table {
+    background: #FFFACA;
+    padding: 2px;
+    border: 2px solid gray;
+}
+
+td {
+    padding: 10px;
+    border: 2px dotted gray;
+}
+
+tr:nth-of-type(2) td:nth-of-type(3) {
+    background: yellow;
+}
+
+tr:nth-of-type(3) td:nth-of-type(3) {
+    background: #B9B9B9;
+}
+
+tr:nth-of-type(4) td:nth-of-type(3) {
+    background: #833B00;
+}
+
+th {
+    padding-top: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    background: #FFDE71;
+    border: 2px dashed #7C3600;
+}

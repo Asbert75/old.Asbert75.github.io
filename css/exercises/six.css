@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 2px;
+}
+
+.cell {
+    display: inline-block;
+    border: 1px solid gray;
+    padding-top: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    width: 150px;
+    height: 50px;
+    background: lightyellow;
+    
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.two .cell:nth-of-type(4), .three .cell:nth-of-type(4), .four .cell:nth-of-type(4), .five .cell:nth-of-type(4) {
+    text-align: right;
+}
+
+.row .cell:nth-of-type(3) {
+    text-align: center;
+}
+
+.two .cell, .three .cell, .four .cell, .five .cell {
+    border: 2px dotted gray;
+}
+
+.one .cell {
+    border: 2px dashed brown;
+    background: #FFFD74;
+    text-align: center;
+}
+
+.two .cell:nth-of-type(3) {
+    background: yellow;
+}
+
+.three .cell:nth-of-type(3) {
+    background: silver;
+}
+
+.four .cell:nth-of-type(3) {
+    background: brown;
+}
