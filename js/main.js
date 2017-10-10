@@ -3,32 +3,6 @@ window.onload = function() {
     setTimeout(function() {
         animateHr(document.getElementById("about"), "show");
     }, 700);
-
-    setTimeout(function() {
-        animateBorder(document.getElementById("aboutImg"));
-    }, 700);
-}
-
-function animateBorder(e) {
-    e.style.transitionDuration = "1s";
-    e.style.transitionTimingFunction = "linear";
-    e.style.transitionProperty = "all";
-
-    setTimeout(function() {
-        e.style.borderTop = "3px solid turquoise";
-
-        setTimeout(function() {
-            e.style.borderRight = "3px solid turquoise";
-
-            setTimeout(function() {
-                e.style.borderBottom = "3px solid turquoise";
-
-                setTimeout(function() {
-                    e.style.borderLeft = "3px solid turquoise";
-                }, 100);
-            }, 100);
-        }, 100);
-    }, 100);
 }
 
 let displayed = 1;
@@ -73,7 +47,7 @@ function displayId(id) {
     displayed = id;
 }
 
-function slide(element, direction) {
+function slide(element, direction, hidden=false) {
     element.style.transitionDuration = "0.5s";
 
     switch(direction) {

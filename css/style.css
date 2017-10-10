@@ -115,13 +115,6 @@ nav ul li a {
     }
 }
 
-#aboutImg {
-    width: 12em;
-    height: 12em;
-    border-radius: 100%;
-    border: 3px solid rgba(0,0,0,0);
-}
-
 .about {
     transition: left 1s ease-in;
     width: 60%;
@@ -130,6 +123,14 @@ nav ul li a {
     left: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.showcase {
+    transform: skew(0, 0.1);
+}
+
+.animateSideHr {
+    height: 5em;
 }
 
 .exercises {
