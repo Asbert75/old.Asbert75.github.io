@@ -2,7 +2,33 @@ window.onload = function() {
     document.getElementById("about").style.left = "50%";
     setTimeout(function() {
         animateHr(document.getElementById("about"), "show");
-    }, 200);
+    }, 700);
+
+    setTimeout(function() {
+        animateBorder(document.getElementById("aboutImg"));
+    }, 700);
+}
+
+function animateBorder(e) {
+    e.style.transitionDuration = "1s";
+    e.style.transitionTimingFunction = "linear";
+    e.style.transitionProperty = "all";
+
+    setTimeout(function() {
+        e.style.borderTop = "3px solid turquoise";
+
+        setTimeout(function() {
+            e.style.borderRight = "3px solid turquoise";
+
+            setTimeout(function() {
+                e.style.borderBottom = "3px solid turquoise";
+
+                setTimeout(function() {
+                    e.style.borderLeft = "3px solid turquoise";
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 100);
 }
 
 let displayed = 1;
@@ -21,7 +47,6 @@ function displayId(id) {
     let currentItem = document.querySelectorAll("[data-id='" + displayed + "']")[0];
     let newItem = document.querySelectorAll("[data-id='" + id + "']")[0];
 
-    
     slide(newItem, "mid");
     slide(currentItem, direction);
     

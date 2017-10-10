@@ -17,11 +17,11 @@
 <body>
     <nav>
         <ul>
-            <li><a class="navText" href="#" onclick="displayId(1)">About</a></li>
-            <li><a class="navText" href="#" onclick="displayId(2)">Exercises</a></li>
-            <li><a class="navText" href="#" onclick="displayId(3)">Projects</a></li>
+            <li><a class="navText" href="javascript:void(0)" onclick="displayId(1)">About</a></li>
+            <li><a class="navText" href="javascript:void(0)" onclick="displayId(2)">Exercises</a></li>
+            <li><a class="navText" href="javascript:void(0)" onclick="displayId(3)">Projects</a></li>
             <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
-            <li><a class="navImg" href="https://www.linkedin.com/in/erik-olsson-b0ab66117/"><img src="images/linkedin.svg" alt="LinkedIn"/></a></li>
+            <li class="imgLi"><a class="navImg" href="https://www.linkedin.com/in/erik-olsson-b0ab66117/"><img src="images/linkedin.svg" alt="LinkedIn"/></a></li>
             <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
             <li><a class="navImg" href="https://github.com/Asbert75"><img src="images/github.svg" alt="GitHub"/></a></li>
             <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
@@ -32,7 +32,7 @@
     </nav>
 
     <div id="about" class="about slideItem" data-id="1">
-        <img src="images/me.jpg" alt="invalid"/>
+        <img id="aboutImg" src="images/me.jpg" alt="Picture of me"/> 
         <p>
         I'm Erik, a <span>full-stack</span> developer student at EC Utbildning. I create with a burning <span>passion</span> for
         design and code. This page will showcase some of my creations. Welcome to my <span>portfolio</span>, have a look around. 
@@ -79,11 +79,27 @@
 
     <div id="projects" class="projects slideItem" data-id="3">
         <div class="showcase">
-            <a class="item">
+            <div class="item">
                 <h4>Showcase Item</h4>
-                <img src="" alt="Showcase item"/>
-            </a>
-        </div>>
+                <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>
+            </div>
+
+            <div class="item">
+                <h4>Showcase Item</h4>
+                <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>
+            </div>
+
+            <div class="item">
+                <h4>Showcase Item</h4>
+                <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>
+            </div>
+
+            <div class="item">
+                <h4>Showcase Item</h4>
+                <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>
+            </div>
+        </div>
+
         <hr id="projectsHr" class="slidingHr">
     </div>
 </body>

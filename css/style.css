@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-    color: #FFFFFF; 
+    color: #FFFFFF;
 
-    font-size: 0.98em;
+    font-size: 1em;
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     background: #080808;
 }
 
@@ -109,17 +109,21 @@ nav ul li a {
     .slideItem {
         height: 60%;
     }
+
+    body {
+        overflow-y: scroll;
+    }
 }
 
-#about img {
-    margin-bottom: 1em;
+#aboutImg {
     width: 12em;
     height: 12em;
     border-radius: 100%;
-    border: 3px solid turquoise;
+    border: 3px solid rgba(0,0,0,0);
 }
 
 .about {
+    transition: left 1s ease-in;
     width: 60%;
     position: absolute;
     top: 50%;
@@ -169,4 +173,15 @@ nav ul li a {
     left: 150%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.item img {
+    width: 15em;
+    height: 9em;
+}
+
+.showcase h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
 }
