@@ -42,7 +42,7 @@ function displayId(id) {
     setTimeout(function() {
         animateHr(newItem, "show");
         animateHr(currentItem, "hide");
-    }, 200)
+    }, 500)
 
     displayed = id;
 }

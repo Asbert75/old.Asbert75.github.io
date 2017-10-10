@@ -8,8 +8,12 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: #080808;
+}
+
+.content {
+    overflow-x: hidden;
 }
 
 body::after {
@@ -53,7 +57,7 @@ h3 {
 }
 
 .animateHr {
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     border: 2px solid turquoise;
     width: 15%;
     margin-left: 42.5%;
@@ -109,10 +113,6 @@ nav ul li a {
     .slideItem {
         height: 60%;
     }
-
-    body {
-        overflow-y: scroll;
-    }
 }
 
 .about {
@@ -136,7 +136,7 @@ nav ul li a {
 .exercises {
     position: absolute;
     top: 50%;
-    left: 150%;
+    left: 250%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -171,7 +171,7 @@ nav ul li a {
     width: 60%;
     position: absolute;
     top: 50%;
-    left: 150%;
+    left: 250%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
