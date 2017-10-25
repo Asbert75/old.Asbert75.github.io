@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+}
+
+.rect1 {
+    margin: 10em auto;
+    background: black;
+    width: 70vw;
+    height: 80vw;
+}
+
+.rect2 {
+    position: fixed;
+    left: 50%;
+    top: 15em;
+    transform: translate(-50%);
+    background: white;
+    width: 50vw;
+    height: 30vw;
+}
+
+.rect3 {
+    position: relative;
+    left: 50%;
+    top: -5%;
+    transform: translate(-50%);
+    background: green;
+    width: 20vw;
+    height: 20vw;
+}

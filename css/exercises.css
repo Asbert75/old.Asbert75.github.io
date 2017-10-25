@@ -1,0 +1,34 @@
+.exercises {
+    position: absolute;
+    top: 50%;
+    left: 250%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+}
+
+.exerciseList {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exerciseItem {
+    margin: 1%;
+    text-align: center;
+}
+
+.exerciseItem {
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    padding-bottom: 0.5em;
+}
+
+.exerciseItem a {
+    text-decoration: none;
+}
+
+.exerciseItem:hover {
+    border-bottom: 2px solid turquoise;
+}

@@ -1,0 +1,82 @@
+.desktop {
+    z-index: 10;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    text-align: right;
+}
+
+.navImg img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.desktop ul li a {
+    transition: opacity 0.2s linear;
+    text-decoration: none;
+}
+
+.desktop ul li a:hover {
+    transition: opacity 0.2s linear;
+    opacity: 0.5;
+}
+
+.desktop ul li:nth-child(4) {
+    margin-left: 1em;
+}
+
+.navImg {
+    padding: 0.25em !IMPORTANT;
+}
+
+.desktop ul li {
+    display: inline-block;
+}
+
+.desktop ul li a {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.mobile {
+    display: none;
+    z-index: 99;
+}
+
+.hamburger {
+    width: 3em;
+    height: 3em;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+}
+
+.mobile ul {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    list-style-type: none;
+    height: 100vh;
+}
+
+.mobile ul li {
+    width: 100vw;
+}   
+
+.mobile ul li a {
+    font-size: 150%;
+    transition: opacity 0.3s linear;
+    text-decoration: none;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: block;
+    text-align: center;
+}
+
+.mobile ul li a:hover {
+    transition: opacity 0.3s linear;
+    opacity: 0.5;
+}

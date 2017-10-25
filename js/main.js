@@ -47,7 +47,7 @@ function displayId(id) {
     displayed = id;
 }
 
-function slide(element, direction, hidden=false) {
+function slide(element, direction) {
     element.style.transitionDuration = "0.5s";
 
     switch(direction) {

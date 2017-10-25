@@ -1,0 +1,20 @@
+.about {
+    z-index: -1;
+    transition: left 1s ease-in;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about p {
+    font-weight: lighter;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.about p span {
+    font-weight: 500;
+}

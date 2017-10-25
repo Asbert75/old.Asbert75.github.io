@@ -1,0 +1,43 @@
+body {
+    background: rgba(0,0,0,0.2);
+}
+
+p span {
+ color: red;
+}
+
+.kategori .diagram {
+    background: #4D4D85;
+}
+
+p, div:hover {
+    border: 1px solid green;
+}
+
+li + li {
+    border: 1px solid green;
+}	
+
+[class*="sub"] {
+    color: orange;
+}
+
+ul > li:nth-child(3).hello {
+    background: red;
+}
+
+li:last-child {
+    border: 2px solid purple;
+}
+
+p.kategori {
+    font-size: 2em;
+}
+
+.diagram span {
+    color: turquoise;
+}
+
+p > span {
+    font-size: 1.5em;
+}
