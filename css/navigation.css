@@ -42,7 +42,6 @@
 
 .mobile {
     display: none;
-    z-index: 99;
 }
 
 .hamburger {
@@ -51,15 +50,22 @@
     position: fixed;
     top: 2em;
     right: 2em;
+    z-index: 99;
 }
 
 .mobile ul {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding-top: 5em;
+    padding-bottom: 5em;
     list-style-type: none;
     height: 100vh;
+    z-index: 98;
+}
+
+.mobileNav {
+    transition: all 0.5s linear;
+    position: absolute;
+    top: 0;
 }
 
 .mobile ul li {
@@ -67,11 +73,11 @@
 }   
 
 .mobile ul li a {
-    font-size: 150%;
+    font-size: 125%;
     transition: opacity 0.3s linear;
     text-decoration: none;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: block;
     text-align: center;
 }

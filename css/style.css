@@ -12,7 +12,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: #080808;
 }
 
@@ -65,4 +65,9 @@ h3 {
     .desktop {
         display: none;
     }
+}
+
+.hide {
+    position: absolute;
+    top: -200% !IMPORTANT;
 }

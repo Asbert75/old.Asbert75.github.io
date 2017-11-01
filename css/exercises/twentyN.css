@@ -91,9 +91,15 @@ input:focus, select:focus, textarea:focus {
     width: 30px;
 }
 
+.fullLength {
+    margin-left: 0.2em;
+    width: 100% !IMPORTANT;
+}
+
 button {
+    position: relative;
+    top: 2em;
     clear: both;
-    margin-top: 20em;
     padding: 1em 2em 1em 2em;
     border-radius: 10px;
     border: none;
@@ -105,5 +111,5 @@ button {
 }
 
 button:active {
-    border: 1px solid rgb(173, 173, 173);
+    border: 2px solid rgb(173, 173, 173);
 }

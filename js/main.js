@@ -3,6 +3,14 @@ window.onload = function() {
     setTimeout(function() {
         animateHr(document.getElementById("about"), "show");
     }, 700);
+
+    hideMobile();
+}
+
+function hideMobile() {
+    document.getElementById("hamburger").addEventListener("click", function() {
+        document.getElementById("mobileNav").classList.toggle("hide");
+    });
 }
 
 let displayed = 1;

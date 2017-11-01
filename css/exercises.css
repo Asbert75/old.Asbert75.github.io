@@ -32,3 +32,9 @@
 .exerciseItem:hover {
     border-bottom: 2px solid turquoise;
 }
+
+@media screen and (max-width: 1080px) {
+    .header h3 {
+        display: none;
+    }
+}

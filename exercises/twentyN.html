@@ -28,7 +28,7 @@
     <form class="paymentInformation">
         <div class="creditCardInformation">
             <h2>Credit Card Information</h2>
-            Card Type
+            Card Type<br>
             <select id="cardType">
                 <option value="VISA">VISA</option>
                 <option value="MasterCard">MasterCard</option>
@@ -36,37 +36,33 @@
                 <option value="VISA Electron">VISA Electron</option>
             </select>
             <br>
-            <label for="cardNum">Card # </label>
-            <input id="cardNum" type="text" placeholder="xxxx xxxx xxxx xxxx" />
+            <label for="cardNum">Card # </label><br>
+            <input id="cardNum" class="fullLength" type="text" placeholder="xxxx xxxx xxxx xxxx" />
             <br>
-            <label for="expiryDate">Expiry Date </label>
+            <label for="expiryDate">Expiry Date </label><br>
             <input id="expiryDate" class="expiry" type="text" maxlength="2" placeholder="xx" /> 
             <span>/</span> 
             <input class="expiry" type="text" maxlength="2" placeholder="xx" />
             <br>
-            <label for="ccv">CCV </label>
-            <input id="ccv" class="ccv" type="text" maxlength="3" placeholder="xxx" />
+            <label for="ccv">CCV </label><br>
+            <input id="ccv" class="ccv fullLength" type="text" maxlength="3" placeholder="xxx" />
         </div>
         <div class="billingInformation">
             <h2>Billing Information</h2>
-            Country
-            <input type="text" />
+            Country<br>
+            <input class="fullLength" type="text" />
             <br>
-            Address
-            <input type="text" />
+            Address<br>
+            <input class="fullLength" type="text" />
             <br>
-            Tel. # 
-            <input type="text" />
+            Tel. #<br> 
+            <input class="fullLength" type="text" />
             <br><br>
             Additional Information<br>
-            <textarea></textarea>
+            <textarea class="fullLength"></textarea>
         </div>
 
         <button type="submit">Purchase</button>
     </form>
-
-    <div class="clearFixContainer">
-
-    </div>
 </body>
 </html>
