@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uppgift 7.20+</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/exercises/twentyN.css">
+
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Forum</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="paymentInformation">
+        <div class="creditCardInformation">
+            <h2>Credit Card Information</h2>
+            Card Type<br>
+            <select id="cardType">
+                <option value="VISA">VISA</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Golden">Golden</option>
+                <option value="VISA Electron">VISA Electron</option>
+            </select>
+            <br>
+            <label for="cardNum">Card # </label><br>
+            <input id="cardNum" class="fullLength" type="text" placeholder="xxxx xxxx xxxx xxxx" />
+            <br>
+            <label for="expiryDate">Expiry Date </label><br>
+            <input id="expiryDate" class="expiry" type="text" maxlength="2" placeholder="xx" /> 
+            <span>/</span> 
+            <input class="expiry" type="text" maxlength="2" placeholder="xx" />
+            <br>
+            <label for="ccv">CCV </label><br>
+            <input id="ccv" class="ccv fullLength" type="text" maxlength="3" placeholder="xxx" />
+        </div>
+        <div class="billingInformation">
+            <h2>Billing Information</h2>
+            Country<br>
+            <input class="fullLength" type="text" />
+            <br>
+            Address<br>
+            <input class="fullLength" type="text" />
+            <br>
+            Tel. #<br> 
+            <input class="fullLength" type="text" />
+            <br><br>
+            Additional Information<br>
+            <textarea class="fullLength"></textarea>
+        </div>
+
+        <button type="submit">Purchase</button>
+    </form>
+</body>
+</html>

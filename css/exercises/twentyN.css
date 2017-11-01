@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    color: rgb(90, 90, 90);
+}
+
+nav {
+    margin-top: 5em;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    border-radius: 10px;
+    text-transform: lowercase;
+    padding: 1.5em 3em 1.5em 3em;
+    background: rgb(231, 231, 231);
+    border-bottom: 2px solid rgb(173, 173, 173);
+
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(66, 66, 66);
+    border-bottom-color: rgb(66, 66, 66);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:active {
+    border: 1px solid rgb(179, 179, 179);
+}
+
+
+form {
+    font-size: 0.8em;
+
+    margin-top: 5em;
+    margin-bottom: 5em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.creditCardInformation, .billingInformation {
+    margin-top: 2em;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    background: rgb(231, 231, 231);
+    padding: 2em;
+}
+
+.creditCardInformation {
+    margin-right: 1em;
+    float: left;
+}
+
+.billingInformation {
+    margin-left: 1em;
+    float: right;
+}
+
+form h2 {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+label {
+    margin-left: 0.2em;
+}
+
+input {
+    margin-top: 0.5em;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline-color: #57ff60;
+}
+
+.expiry {
+    width: 20px;
+}
+
+.ccv {
+    width: 30px;
+}
+
+.fullLength {
+    margin-left: 0.2em;
+    width: 100% !IMPORTANT;
+}
+
+button {
+    position: relative;
+    top: 2em;
+    clear: both;
+    padding: 1em 2em 1em 2em;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+button:active {
+    border: 2px solid rgb(173, 173, 173);
+}

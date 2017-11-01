@@ -1,0 +1,19 @@
+.projects {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 250%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item img {
+    width: 15em;
+    height: 9em;
+}
+
+.showcase h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}

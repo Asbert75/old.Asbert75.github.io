@@ -3,6 +3,14 @@ window.onload = function() {
     setTimeout(function() {
         animateHr(document.getElementById("about"), "show");
     }, 700);
+
+    hideMobile();
+}
+
+function hideMobile() {
+    document.getElementById("hamburger").addEventListener("click", function() {
+        document.getElementById("mobileNav").classList.toggle("hide");
+    });
 }
 
 let displayed = 1;
@@ -47,7 +55,7 @@ function displayId(id) {
     displayed = id;
 }
 
-function slide(element, direction, hidden=false) {
+function slide(element, direction) {
     element.style.transitionDuration = "0.5s";
 
     switch(direction) {

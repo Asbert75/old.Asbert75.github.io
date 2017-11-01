@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <title>Erik "Wicked" Olsson</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">.
-    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1"/>
+
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/exercises.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
    
     <script
@@ -17,19 +22,33 @@
 <body>
     <div class="content">
         <nav>
-            <ul>
-                <li><a class="navText" href="javascript:void(0)" onclick="displayId(1)">About</a></li>
-                <li><a class="navText" href="javascript:void(0)" onclick="displayId(2)">Exercises</a></li>
-                <li><a class="navText" href="javascript:void(0)" onclick="displayId(3)">Projects</a></li>
-                <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
-                <li class="imgLi"><a class="navImg" href="https://www.linkedin.com/in/erik-olsson-b0ab66117/"><img src="images/linkedin.svg" alt="LinkedIn"/></a></li>
-                <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
-                <li><a class="navImg" href="https://github.com/Asbert75"><img src="images/github.svg" alt="GitHub"/></a></li>
-                <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
-                <li><a class="navImg" href="https://facebook.com/eriko97"><img src="images/facebook.svg" alt="Facebook"/></a></li>
-                <!-- Icon made by https://www.flaticon.com/authors/chanut-is-industries from www.flaticon.com  -->
-                <li><a class="navImg" href="mailto:erik.r.olsson@telia.com"><img src="images/email.svg" alt="Email"></a></li>
-            </ul>
+            <div class="desktop">
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="displayId(1)">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="displayId(2)">Exercises</a></li>
+                    <li><a href="javascript:void(0)" onclick="displayId(3)">Projects</a></li>
+                    <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
+                    <li><a class="navImg" href="https://www.linkedin.com/in/erik-olsson-b0ab66117/"><img src="images/icons/linkedin.svg" alt="LinkedIn"/></a></li>
+                    <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
+                    <li><a class="navImg" href="https://github.com/Asbert75"><img src="images/icons/github.svg" alt="GitHub"/></a></li>
+                    <!-- Icon made by https://www.flaticon.com/authors/roundicons from www.flaticon.com  -->
+                    <li><a class="navImg" href="https://facebook.com/eriko97"><img src="images/icons/facebook.svg" alt="Facebook"/></a></li>
+                    <!-- Icon made by https://www.flaticon.com/authors/chanut-is-industries from www.flaticon.com  -->
+                    <li><a class="navImg" href="mailto:erik.r.olsson@telia.com"><img src="images/icons/email.svg" alt="E-Mail"></a></li>
+                </ul>
+            </div>
+
+            <div class="mobile">
+                <a id="hamburger" href="#"><img class="hamburger" src="images/icons/menu-button.svg" alt="Menu"></a>
+                <ul id="mobileNav" class="mobileNav hide">
+                    <li><a href="javascript:void(0)" onclick="displayId(1)">About</a></li>
+                    <li><a href="javascript:void(0)" onclick="displayId(2)">Exercises</a></li>
+                    <li><a href="javascript:void(0)" onclick="displayId(3)">Projects</a></li>
+                    <li><a href="https://github.com/Asbert75">GitHub</a></li>
+                    <li><a href="https://facebook.com/eriko97">Facebook</a></li>
+                    <li><a href="https://linkedin.com/in/erik-olsson-b0ab66117">LinkedIn</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div id="about" class="about slideItem" data-id="1">
@@ -74,16 +93,35 @@
                 <div class="exerciseItem">
                     <a href="exercises/nine.html">Exercise 7.9</a>
                 </div>
+
+                <div class="exerciseItem">
+                    <a href="exercises/ten.html">Exercise 7.10</a>
+                </div>
+
+                <div class="exerciseItem">
+                    <a href="exercises/zengarden/zengarden.html">Exercise 7.12</a>
+                </div>
+
+                <div class="exerciseItem">
+                    <a href="exercises/thirteen.html">Exercise 7.13</a>
+                </div>
+
+                <div class="exerciseItem">
+                        <a href="exercises/fourteen.html">Exercise 7.14</a>
+                </div>
+
+                <div class="exerciseItem">
+                        <a href="exercises/fifteen.html">Exercise 7.15</a>
+                </div>
+
+                <div class="exerciseItem">
+                        <a href="exercises/sixteen.html">Exercise 7.16</a>
+                </div>
             </div>
         </div>
 
         <div id="projects" class="projects slideItem" data-id="3">
             <div class="showcase">
-                <div class="item">
-                    <h4>Showcase Item</h4>
-                    <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>
-                </div>
-
                 <div class="item">
                     <h4>Showcase Item</h4>
                     <a href="#"><img src="images/mountain.jpeg" alt="Showcase item"/></a>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body > ul {
+    background: rgb(223, 223, 223);
+    padding-left: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+body > ul > li {
+    display: inline;
+    padding: 1em;
+}
+
+li > ul > li {
+    padding: 0.3em;
+    list-style-type: none;
+}
+
+ul > li > ul {
+    position: absolute;
+    left: 7.5em;
+    top: 4em;
+    background: rgb(223, 223, 223);
+    display: none;
+    padding: 0.5em;
+}
+
+body > ul > li {
+    padding-bottom: 1.5em;
+}
+
+ul > li:hover > ul {
+    border: 1px solid black;
+    border-top: none;
+    display: block;
+}
